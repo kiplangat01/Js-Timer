@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+.alarm-clock{
+    background-color: rgb(46, 26, 65);
+    color: white;
+    border: tan solid 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.date{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 0;
+    font-family: "orbitron", sans-serif;
+    font-size: 52px;
+}
+
+.time span{
+    color: rgb(218, 30, 30);
+    text-shadow: 0 0 15px rgb(56, 16, 16);
+}
+
+.time span:nth-of-type(5){
+    width: 90px;
+}
+
+.time span.colon{
+    width: 12px;
+    text-align: center;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
